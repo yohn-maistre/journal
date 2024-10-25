@@ -5,8 +5,8 @@
 
 @font-face {
     font-family: "08italic";
-    src: url("/fonts/08italic.woff") format("woff"),
-         url("/fonts/08italic.woff2") format("woff2");
+    src: url("/journal/fonts/08italic.woff") format("woff"),
+         url("/journal/fonts/08italic.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -14,8 +14,8 @@
 
 @font-face {
     font-family: "08regular";
-    src: url("/fonts/08regular.woff") format("woff"),
-         url("/fonts/08regular.woff2") format("woff2");
+    src: url("/journal/fonts/08regular.woff") format("woff"),
+         url("/journal/fonts/08regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -23,16 +23,16 @@
 
 @font-face {
     font-family: "12aiisc";
-    src: url("/fonts/12aiisc.woff") format("woff"),
-         url("/fonts/12aiisc.woff2") format("woff2");
+    src: url("/journal/fonts/12aiisc.woff") format("woff"),
+         url("/journal/fonts/12aiisc.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "12italic";
-    src: url("/fonts/12italic.woff") format("woff"),
-         url("/fonts/12italic.woff2") format("woff2");
+    src: url("/journal/fonts/12italic.woff") format("woff"),
+         url("/journal/fonts/12italic.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -40,16 +40,16 @@
 
 @font-face {
     font-family: "12regular";
-    src: url("/fonts/12regular.woff") format("woff"),
-         url("/fonts/12regular.woff2") format("woff2");
+    src: url("/journal/fonts/12regular.woff") format("woff"),
+         url("/journal/fonts/12regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "SC08regular";
-    src: url("/fonts/SC08regular.woff") format("woff"),
-         url("/fonts/SC08regular.woff2") format("woff2");
+    src: url("/journal/fonts/SC08regular.woff") format("woff"),
+         url("/journal/fonts/SC08regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -57,16 +57,16 @@
 
 @font-face {
     font-family: "SC12regular";
-    src: url("/fonts/SC12regular.woff") format("woff"),
-         url("/fonts/SC12regular.woff2") format("woff2");
+    src: url("/journal/fonts/SC12regular.woff") format("woff"),
+         url("/journal/fonts/SC12regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "sansRegular";
-    src: url("/fonts/sansRegular.woff") format("woff"),
-         url("/fonts/sansRegular.woff2") format("woff2");
+    src: url("/journal/fonts/sansRegular.woff") format("woff"),
+         url("/journal/fonts/sansRegular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -74,8 +74,8 @@
 
 @font-face {
     font-family: "monoRegular";
-    src: url("/fonts/monoRegular.woff") format("woff"),
-         url("/fonts/monoRegular.woff2") format("woff2");
+    src: url("/journal/fonts/monoRegular.woff") format("woff"),
+         url("/journal/fonts/monoRegular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -433,7 +433,7 @@ footer {
     padding-top: var(--spacing-08);
     text-align: center;
     border-top: 0.188rem solid transparent;
-    border-image: url(/sep.svg) 30 round;
+    border-image: url(/journal/sep.svg) 30 round;
 }
 
 footer p {

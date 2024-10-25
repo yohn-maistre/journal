@@ -23,6 +23,7 @@ const { title, description, date, tags, cover } = post.data;
 
 <Layout title={post.data.title} description={post.data.description}>
   <div>
+    <a href="/journal" class="back-button">← Back</a>
     <div>
       <h1>{post.data.title}</h1>
       <p class="post-summary">{post.data.description}</p>
@@ -43,3 +44,28 @@ const { title, description, date, tags, cover } = post.data;
     <PostContent post={post} />
   </article>
 </Layout>
+
+<style>
+  .back-button {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: var(--desktop-body-sm);
+    line-height: var(--lh-desktop-body-sm);
+    color: var(--text-secondary-alt);
+    text-decoration: none;
+    margin-bottom: var(--spacing-06);
+    transition: color 0.3s ease;
+  }
+
+  .back-button:hover {
+    color: var(--accent);
+  }
+
+  @media screen and (max-width: 56em) {
+    .back-button {
+      font-size: var(--desktop-caption);
+      line-height: var(--lh-desktop-caption);
+      margin-bottom: var(--spacing-04);
+    }
+  }
+</style>

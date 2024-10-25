@@ -38,6 +38,6 @@ const { slug, posts, years } = Astro.props;
 ---
 
 <Layout>
-  <SlugList slugs={years} activeSlug={slug} generateLink={(slug) => `/date/${encodeURI(slug)}`} />
+  <SlugList slugs={years} activeSlug={slug} generateLink={(slug) => `/journal/date/${encodeURI(slug)}`} />
   <PostListing posts={posts} />
 </Layout>

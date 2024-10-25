@@ -1,0 +1,9 @@
+---
+export function getStaticPaths() {
+  return [];
+}
+
+const { catchall } = Astro.params;
+---
+<h1>404: {catchall} Not Found</h1>
+
