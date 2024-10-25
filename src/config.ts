@@ -6,7 +6,7 @@ export const SITE_DESCRIPTION =
 
   export const MENUS = [
   {
-    title: "yose.is-a.dev",
+    title: "home",
     link: "https://yose.is-a.dev",
     target: "_self",
   },
