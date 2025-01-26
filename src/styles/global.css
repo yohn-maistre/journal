@@ -96,16 +96,6 @@
     --bg-color: #FFFBF2;
     --hover-bg: rgba(0, 0, 0, 0.05);
 }
-#site-header {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-    padding-block: var(--spacing-06);
-    padding-inline: var(--spacing-06);
-    background: var(--bg-color); /* Change this line */
-    transition: background-color 0.3s ease; /* Add this line */
-}
 
 /* Dark theme variables */
 [data-new-ui-theme="dark--warm"] {
@@ -190,7 +180,8 @@ section {
     z-index: 10;
     padding-block: var(--spacing-06);
     padding-inline: var(--spacing-06);
-    background: var(--background);
+    background: var(--bg-color); /* Change this line */
+    transition: background-color 0.3s ease; /* Add this line */
 }
 
 nav {
