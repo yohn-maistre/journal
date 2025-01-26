@@ -92,7 +92,51 @@
     --serif-breakout: "sansRegular", var(--geometric-humanist);
     --serif-small: "12aiisc", var(--old-style);
     --mono: "monoRegular", var(--monospace-code);
+    --text-color: var(--text-primary);
+    --bg-color: #FFFBF2;
+    --hover-bg: rgba(0, 0, 0, 0.05);
 }
+#site-header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    padding-block: var(--spacing-06);
+    padding-inline: var(--spacing-06);
+    background: var(--bg-color); /* Change this line */
+    transition: background-color 0.3s ease; /* Add this line */
+}
+
+/* Dark theme variables */
+[data-new-ui-theme="dark--warm"] {
+    --text-color: #FFFBF2;
+    --bg-color: #1a1a1a;
+    --hover-bg: rgba(255, 255, 255, 0.1);
+    --background: #1a1a1a;
+  }
+  
+  /* Theme toggle specific styles */
+  .theme-toggle {
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .theme-toggle:hover {
+    background: var(--hover-bg);
+  }
+  
+  .theme-toggle svg {
+    transition: stroke 0.3s ease;
+    stroke: currentColor;
+  }
 
 ::selection {
     color: var(--black);
@@ -109,13 +153,14 @@ body {
     line-height: 2.125rem;
     color: var(--text-primary);
     background: var(--background);
-    font-kerning: normal;
-    font-variant-numeric: oldstyle-nums proportional-nums;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-synthesis-weight: none;
-    overflow-wrap: break-word
+    overflow-wrap: break-word;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 main {
@@ -358,11 +403,11 @@ ul, ol {
     margin: 0;
     padding: 0;
 }
-  
+
 ol {
     margin-left: 1.25em;
 }
-  
+
 ol li {
     padding-left: 0.25em;
 }

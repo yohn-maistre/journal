@@ -1,7 +1,7 @@
 ---
-import { SITE_LOGO, SITE_TITLE } from "../config";
-import Menus from "./menus.astro";
-import ThemeToggle from "./theme-toggle.astro";
+import { SITE_LOGO, SITE_TITLE } from "./src/config";
+import Menus from "./src/components/menus.astro";
+import ThemeToggle from "./src/components/theme-toggle.astro";
 ---
 
 <header id="site-header">
@@ -11,8 +11,8 @@ import ThemeToggle from "./theme-toggle.astro";
       <span>{SITE_TITLE}</span>
     </a>
     <div class="nav-right">
-      <Menus />
       <ThemeToggle />
+      <Menus />
     </div>
   </nav>
 </header>

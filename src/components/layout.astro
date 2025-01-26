@@ -13,9 +13,14 @@ const { title, description } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" data-new-ui-theme="light--warm">
+<html lang="en">
   <head>
     <Meta title={title ? `${title} · ${SITE_TITLE}` : SITE_TITLE} description={description ?? SITE_DESCRIPTION} />
+    <!-- Add this script to head -->
+    <script is:inline>
+      const savedTheme = localStorage.getItem('theme') || 'light--warm';
+      document.documentElement.setAttribute('data-new-ui-theme', savedTheme);
+    </script>
   </head>
   <body>
     <Header />
